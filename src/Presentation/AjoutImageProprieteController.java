@@ -59,7 +59,9 @@ public class AjoutImageProprieteController implements Initializable {
      Propriete P = new Propriete();
      PhotoProprieteService PPS = new PhotoProprieteService();
      PhotoPropriete PP = new PhotoPropriete();
-     
+     FileChooser fileChooser=new FileChooser();
+     FTPUploadFile F= new FTPUploadFile();
+     File infile;
     /**
      * Initializes the controller class.
      */
@@ -78,23 +80,22 @@ public class AjoutImageProprieteController implements Initializable {
          
          PP.setIdPropriete(P.getIdProptiete());
          System.out.println(PP.toString());
+         PP.setURLphoto("/C:/Users/Fares/Documents/FTPPIDEV/"+infile.getName());
          PPS.ajouterPhotoPropriete(PP);
+         F.envoyerficher(infile);
     }
 
     @FXML
     private void ParcourirAction(ActionEvent event) {
         try {
-            FileChooser fileChooser=new FileChooser();
-            File infile = filechooser.showOpenDialog(null);
+           
+             infile = filechooser.showOpenDialog(null);
             Image img = SwingFXUtils.toFXImage(ImageIO.read(infile), null);
             image.setImage(img);
             fileChooser.getExtensionFilters().addAll(
             new FileChooser.ExtensionFilter("Image Files", ".png", ".jpg", "*.gif"));
             imagePropriete.setText(infile.getPath());
-            FTPUploadFile F= new FTPUploadFile();
             System.out.println(infile.getPath());
-            F.envoyerficher(infile);
-            PP.setURLphoto(imagePropriete.getText());
            // PP.setURLphoto(getBitmapFromURL(imagePropriete.getText()).toString());
         } catch (IOException ex) {
             Logger.getLogger(ProprieteController.class.getName()).log(Level.SEVERE, null, ex);

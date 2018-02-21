@@ -142,6 +142,8 @@ public class ProprieteController implements Initializable {
     private Button categorie;
     @FXML
     private Button crit;
+    SwitchScreen SS = new SwitchScreen(); 
+   
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         CategorieService CS = new CategorieService();
@@ -211,46 +213,33 @@ public class ProprieteController implements Initializable {
         ps.ajouterPropriete(P);
        // model.setText(telephonePropriete.getText());
        
-       switchScreen("AjoutImagePropriete.fxml");        
+       SS.switchScreen("AjoutImagePropriete.fxml",add);        
         
-        
-    }
-//fx:controller="Presentation.ProprieteController"
-        
-   
-
-    public void switchScreen(String screen) throws IOException {
-        Parent root = FXMLLoader.load(getClass()
-                .getResource(screen));
-        Scene scene = new Scene(root) ;
-        Stage stage = (Stage) add.getScene().getWindow();
-        stage.setScene(scene);
-        stage.show();
         
     }
 
     @FXML
     private void chercherAction(ActionEvent event) throws IOException {
-         switchScreen("ChercherBonPlan.fxml"); 
+        SS.switchScreen("ChercherBonPlan.fxml",chercher); 
     }
 
     @FXML
     private void modifierAction(ActionEvent event) throws IOException {
-         switchScreen("ModifierPropriete.fxml"); 
+         SS.switchScreen("ModifierPropriete.fxml",modifierprop); 
     }
     
     @FXML
     private void afficherAction(ActionEvent event) throws IOException {
-        switchScreen("AfficherBonPlan.fxml"); 
+        SS.switchScreen("AfficherBonPlan.fxml",afficher); 
     }
 
     @FXML
     private void addCat(ActionEvent event) throws IOException {
-        switchScreen("Categorie.fxml"); 
+        SS.switchScreen("Categorie.fxml",categorie); 
     }
 
     @FXML
     private void critereevaluation(ActionEvent event) throws IOException {
-         switchScreen("CritereEvaluation.fxml"); 
+         SS.switchScreen("CritereEvaluation.fxml",crit); 
     }
 }
