@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.ModifierProprieteController">
+   <children>
+      <Button fx:id="modifier" layoutX="451.0" layoutY="684.0" mnemonicParsing="false" onAction="#modifAction" text="Modifier" />
+      <TextField fx:id="nomPropriete" layoutX="205.0" layoutY="102.0" />
+      <TextField fx:id="adressePropriete" layoutX="205.0" layoutY="147.0" />
+      <TextField fx:id="telephonePropriete" layoutX="205.0" layoutY="192.0" />
+      <Label layoutX="81.0" layoutY="106.0" text="Nom Propriété" />
+      <Label layoutX="77.0" layoutY="151.0" text="Adresse Propriété" />
+      <Label layoutX="91.0" layoutY="196.0" text="Téléphone:" />
+      <Label layoutX="81.0" layoutY="261.0" text="Jour ouvert:" />
+      <Label layoutX="57.0" layoutY="464.0" text="Description:" />
+      <CheckBox fx:id="dimanche" layoutX="175.0" layoutY="243.0" mnemonicParsing="false" text="Dimanche" />
+      <CheckBox fx:id="lundi" layoutX="274.0" layoutY="243.0" mnemonicParsing="false" text="Lundi" />
+      <CheckBox fx:id="mardi" layoutX="376.0" layoutY="243.0" mnemonicParsing="false" text="Mardi" />
+      <CheckBox fx:id="mercredi" layoutX="175.0" layoutY="270.0" mnemonicParsing="false" text="Mercredi" />
+      <CheckBox fx:id="jeudi" layoutX="275.0" layoutY="270.0" mnemonicParsing="false" text="Jeudi" />
+      <CheckBox fx:id="vendredi" layoutX="376.0" layoutY="270.0" mnemonicParsing="false" text="Vendredi" />
+      <CheckBox fx:id="samedi" layoutX="478.0" layoutY="252.0" mnemonicParsing="false" text="Samedi" />
+      <RadioButton fx:id="prix1" layoutX="175.0" layoutY="344.0" mnemonicParsing="false" text="\$" />
+      <RadioButton fx:id="prix2" layoutX="227.0" layoutY="344.0" mnemonicParsing="false" text="\$$" />
+      <RadioButton fx:id="prix3" layoutX="291.0" layoutY="344.0" mnemonicParsing="false" text="\$$$" />
+      <RadioButton fx:id="prix4" layoutX="347.0" layoutY="344.0" mnemonicParsing="false" text="\$$$$" />
+      <ComboBox fx:id="typePropriete" layoutX="162.0" layoutY="373.0" prefWidth="150.0" />
+      <Label layoutX="40.0" layoutY="342.0" text="Fourchette de Prix" />
+      <Label layoutX="50.0" layoutY="377.0" text="Type Propriete: " />
+      <Label layoutX="53.0" layoutY="432.0" text="Livraison" />
+      <RadioButton fx:id="livraisonOui" layoutX="169.0" layoutY="432.0" mnemonicParsing="false" text="Oui" />
+      <RadioButton fx:id="livraisonNon" layoutX="287.0" layoutY="432.0" mnemonicParsing="false" text="Non" />
+      <TextArea fx:id="descriptionPropriete" layoutX="162.0" layoutY="473.0" prefHeight="200.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1024.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.ProprieteController">
+    <stylesheets>
+        <URL value="@fxml1.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="243.0" layoutY="14.0" text="Ajout d'une Propriété" />
+      <Label layoutX="37.0" layoutY="54.0" text="Veuillez saisir les informations relatif à votre propriété" />
+      <Label layoutX="35.0" layoutY="120.0" text="Nom Propriété :" />
+      <TextField fx:id="nomPropriete" layoutX="151.0" layoutY="116.0" />
+      <TextField fx:id="adressePropriete" layoutX="152.0" layoutY="150.0" />
+      <TextField fx:id="villePropriete" layoutX="151.0" layoutY="188.0" />
+      <Label layoutX="35.0" layoutY="154.0" text="Adresse Propriété :" />
+      <Label layoutX="52.0" layoutY="192.0" text="Ville:" />
+      <Label layoutX="52.0" layoutY="233.0" text="Jour ouvert:" />
+      <Label layoutX="47.0" layoutY="454.0" text="Description:" />
+      <CheckBox fx:id="dimanche" layoutX="165.0" layoutY="233.0" mnemonicParsing="false" text="Dimanche" />
+      <CheckBox fx:id="lundi" layoutX="264.0" layoutY="233.0" mnemonicParsing="false" text="Lundi" />
+      <CheckBox fx:id="mardi" layoutX="366.0" layoutY="233.0" mnemonicParsing="false" text="Mardi" />
+      <CheckBox fx:id="mercredi" layoutX="165.0" layoutY="260.0" mnemonicParsing="false" text="Mercredi" />
+      <CheckBox fx:id="jeudi" layoutX="265.0" layoutY="260.0" mnemonicParsing="false" text="Jeudi" />
+      <CheckBox fx:id="vendredi" layoutX="366.0" layoutY="260.0" mnemonicParsing="false" text="Vendredi" />
+      <CheckBox fx:id="samedi" layoutX="468.0" layoutY="242.0" mnemonicParsing="false" text="Samedi" />
+      <TextField fx:id="telephonePropriete" layoutX="151.0" layoutY="293.0" />
+      <RadioButton fx:id="prix1" layoutX="165.0" layoutY="334.0" mnemonicParsing="false" text="\$" />
+      <RadioButton fx:id="prix2" layoutX="217.0" layoutY="334.0" mnemonicParsing="false" text="\$$" />
+      <RadioButton fx:id="prix3" layoutX="281.0" layoutY="334.0" mnemonicParsing="false" text="\$$$" />
+      <RadioButton fx:id="prix4" layoutX="337.0" layoutY="334.0" mnemonicParsing="false" text="\$$$$" />
+      <ComboBox fx:id="typePropriete" layoutX="152.0" layoutY="363.0" prefWidth="150.0" />
+      <Label layoutX="30.0" layoutY="332.0" text="Fourchette de Prix" />
+      <Label layoutX="40.0" layoutY="367.0" text="Type Propriete: " />
+      <Label layoutX="52.0" layoutY="297.0" text="Téléphone:" />
+      <Label layoutX="43.0" layoutY="422.0" text="Livraison" />
+      <RadioButton fx:id="livraisonOui" layoutX="159.0" layoutY="422.0" mnemonicParsing="false" text="Oui" />
+      <RadioButton fx:id="livraisonNon" layoutX="277.0" layoutY="422.0" mnemonicParsing="false" text="Non" />
+      <TextArea fx:id="descriptionPropriete" layoutX="152.0" layoutY="463.0" prefHeight="200.0" prefWidth="200.0" />
+      <Button fx:id="add" layoutX="357.0" layoutY="701.0" mnemonicParsing="false" onAction="#addAction" text="Suivant" />
+      <ImageView fx:id="image" fitHeight="321.0" fitWidth="395.0" layoutX="558.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="chercher" layoutX="669.0" layoutY="689.0" mnemonicParsing="false" onAction="#chercherAction" text="Chercher bon plan" />
+      <Button fx:id="modifierprop" layoutX="827.0" layoutY="577.0" mnemonicParsing="false" onAction="#modifierAction" text="modifier propriete" />
+      <Button fx:id="afficher" layoutX="839.0" layoutY="701.0" mnemonicParsing="false" onAction="#afficherAction" text="Afficher" />
+      <Button fx:id="categorie" layoutX="690.0" layoutY="492.0" mnemonicParsing="false" onAction="#addCat" text="Ajouter Categorie" />
+      <Button fx:id="crit" layoutX="868.0" layoutY="427.0" mnemonicParsing="false" onAction="#critereevaluation" text="Critere eva" />
+   </children>
+</AnchorPane>

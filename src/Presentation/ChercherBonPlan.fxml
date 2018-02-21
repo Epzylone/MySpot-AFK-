@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.ChercherBonPlanController">
+   <children>
+      <TextField layoutX="339.0" layoutY="143.0" />
+      <Label layoutX="211.0" layoutY="147.0" text="Où voulez vous aller ?" />
+      <ImageView fx:id="sortir" fitHeight="150.0" fitWidth="200.0" layoutX="763.0" layoutY="225.0" onMousePressed="#chercherSortir" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="diner" fitHeight="150.0" fitWidth="200.0" layoutX="550.0" layoutY="225.0" onMousePressed="#chercherDiner" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="dejeuner" fitHeight="150.0" fitWidth="200.0" layoutX="111.0" layoutY="534.0" onMousePressed="#chercherDejeuner" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="petitdej" fitHeight="150.0" fitWidth="200.0" layoutX="139.0" layoutY="234.0" onMousePressed="#chercherPetitdej" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="cafe" fitHeight="150.0" fitWidth="200.0" layoutX="774.0" layoutY="567.0" onMousePressed="#chercherCafe" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="cinema" fitHeight="150.0" fitWidth="200.0" layoutX="488.0" layoutY="542.0" onMousePressed="#chercherCinema" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="theatre" fitHeight="150.0" fitWidth="200.0" layoutX="39.0" layoutY="25.0" onMousePressed="#chercherTheatre" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>

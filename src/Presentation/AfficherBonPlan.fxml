@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.AfficherBonPlanController">
+   <children>
+      <TableView fx:id="tab" layoutX="274.0" layoutY="52.0" prefHeight="694.0" prefWidth="955.0" AnchorPane.rightAnchor="37.0">
+        <columns>
+          <TableColumn fx:id="photo" prefWidth="100.0" text="Photo" />
+          <TableColumn fx:id="nom" prefWidth="119.0" text="Nom" />
+            <TableColumn fx:id="fourchette" prefWidth="121.0" text="Fourchette de prix" />
+            <TableColumn fx:id="livraison" minWidth="0.0" prefWidth="131.0" text="Livraison" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
