@@ -6,6 +6,8 @@
 package Presentation;
 
 import entities.AppModel;
+import entities.Propriete;
+import entities.User;
 import java.io.File;
 import java.io.IOException;
 import java.util.logging.Level;
@@ -28,7 +30,8 @@ import javafx.util.Callback;
  * @author Fares
  */
 public class NewFXMain extends Application {
-    
+    public static User user = new User();
+    public static Propriete propriete = new Propriete();
     @Override
     public void start(Stage primaryStage) {
        

@@ -13,7 +13,7 @@ import java.util.Date;
   
 public class Propriete {
    
-    private int idProptiete;
+    private int idPropriete;
     private String nomPropriete;
     private String adressePropriete;
     private long telPropriete;
@@ -58,8 +58,8 @@ public class Propriete {
         this.categorie = categorie;
     }
 
-    public Propriete(int idProptiete, String nomPropriete, String adressePropriete, long telPropriete, String ville, double latitude, double longitude, String jourOuverture, int notePropriete, String description, int fourchetteDePrix, Date dateAjout, boolean livraison, Categorie categorie) {
-        this.idProptiete = idProptiete;
+    public Propriete(int idPropriete, String nomPropriete, String adressePropriete, long telPropriete, String ville, double latitude, double longitude, String jourOuverture, int notePropriete, String description, int fourchetteDePrix, Date dateAjout, boolean livraison, Categorie categorie) {
+        this.idPropriete = idPropriete;
         this.nomPropriete = nomPropriete;
         this.adressePropriete = adressePropriete;
         this.telPropriete = telPropriete;
@@ -90,11 +90,11 @@ public class Propriete {
     }
 
     public void setIdProptiete(int idProptiete) {
-        this.idProptiete = idProptiete;
+        this.idPropriete = idProptiete;
     }
 
-    public int getIdProptiete() {
-        return idProptiete;
+    public int getIdPropriete() {
+        return idPropriete;
     }
 
     public String getNomPropriete() {
@@ -195,7 +195,7 @@ public class Propriete {
 
     @Override
     public String toString() {
-        return "Propriete{" + "idProptiete=" + idProptiete + ", nomPropriete=" + nomPropriete + ", adressePropriete=" + adressePropriete + ", telPropriete=" + telPropriete + ", ville=" + ville + ", latitude=" + latitude + ", longitude=" + longitude + ", jourOuverture=" + jourOuverture + ", notePropriete=" + notePropriete + ", description=" + description + ", fourchetteDePrix=" + fourchetteDePrix + ", dateAjout=" + dateAjout + ", livraison=" + livraison + ", Categorie= " + categorie.toString() + ") ";
+        return "Propriete{" + "idProptiete=" + idPropriete + ", nomPropriete=" + nomPropriete + ", adressePropriete=" + adressePropriete + ", telPropriete=" + telPropriete + ", ville=" + ville + ", latitude=" + latitude + ", longitude=" + longitude + ", jourOuverture=" + jourOuverture + ", notePropriete=" + notePropriete + ", description=" + description + ", fourchetteDePrix=" + fourchetteDePrix + ", dateAjout=" + dateAjout + ", livraison=" + livraison + ", Categorie= " + categorie.toString() + ") ";
     }
 
    
