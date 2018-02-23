@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="480.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Presentation.InscriptionController">
+    <stylesheets>
+        <URL value="@fxml.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="69.0" layoutY="6.0" text="Inscription" />
+      <Label layoutX="71.0" layoutY="51.0" text="Username:" />
+      <Label layoutX="82.0" layoutY="86.0" text="Nom:" />
+      <Label layoutX="78.0" layoutY="121.0" text="Prenom:" />
+      <Label layoutX="46.0" layoutY="156.0" text="Date de Naissance:" />
+      <Label layoutX="84.0" layoutY="191.0" text="Email:" />
+      <Label layoutX="59.0" layoutY="226.0" text="Mot de passe:" />
+      <Label layoutX="67.0" layoutY="331.0" text="Description:" />
+      <Label layoutX="10.0" layoutY="261.0" text="Vérification mot de passe:" />
+      <Label layoutX="80.0" layoutY="295.0" text="N° tél:" />
+      <TextField fx:id="tfUserName" layoutX="151.0" layoutY="47.0" />
+      <TextField fx:id="tfUserNom" layoutX="151.0" layoutY="82.0" />
+      <TextField fx:id="tfUserPrenom" layoutX="151.0" layoutY="117.0" />
+      <DatePicker fx:id="tfDateNaissance" layoutX="152.0" layoutY="152.0" />
+      <TextField fx:id="tfEmail" layoutX="151.0" layoutY="187.0" />
+      <PasswordField fx:id="tfPassword" layoutX="151.0" layoutY="222.0" />
+      <PasswordField fx:id="tfPasswordVerif" layoutX="152.0" layoutY="257.0" />
+      <TextField fx:id="tfTelUser" layoutX="151.0" layoutY="291.0" />
+      <TextField fx:id="tfDescriptionUser" layoutX="151.0" layoutY="327.0" />
+      <TextField fx:id="tfPhotoProfile" layoutX="151.0" layoutY="363.0" />
+      <Button layoutX="301.0" layoutY="363.0" mnemonicParsing="false" onAction="#parcourirAction" text="Parcourir..." />
+      <Button fx:id="inscrire" layoutX="69.0" layoutY="428.0" mnemonicParsing="false" onAction="#inscrireAction" text="S'inscrire" />
+      <Button fx:id="annuler" layoutX="159.0" layoutY="428.0" mnemonicParsing="false" onMousePressed="#annulerAction" text="Annuler" />
+      <Label layoutX="55.0" layoutY="367.0" text="Photo de profile:" />
+      <ImageView fx:id="img" fitHeight="150.0" fitWidth="137.0" layoutX="407.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>
